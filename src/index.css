@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px "Century Gothic", Futura, sans-serif;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 90vh;
+  border: 1px solid #000;
+}
+
+.game::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.game-board,
+.game-info {
+  float: left;
+  padding: 16px;
+  min-height: 30%;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-75 {
+  width: 75%;
+}
+
+.game-status {
+  text-align: center;
+  font-weight: bold;
+  padding: 12px 0;
+}
+
+.game-function {
+  display: flex;
+  justify-content: center;
+}
+
+.highlight {
+  color: red;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008cba;
+}
+
+.button-move {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.game-form::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.form-info {
+  padding: 8px 0;
+  float: left;
+  width: 60%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #000;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.form-submit {
+  float: left;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-left: 12px;
+}
+
+.frm-btn {
+  padding: 8px;
+  background-color: #3cbc8d;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
